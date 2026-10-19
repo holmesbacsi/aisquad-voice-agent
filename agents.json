@@ -1,3 +1,10 @@
 {
-    "agents": []
+    "agents": [
+        {
+            "config": "agent_configs\\AI-Squad-Receptionist.json",
+            "id": "agent_7801m551qqdzfav9fv1verp9kf70",
+            "branch_id": "agtbrch_9801m551qrgcfb6v851xyrq00av6",
+            "version_id": "agtvrsn_5701m59ny8swfqpt53mspegksfhz"
+        }
+    ]
 }
