@@ -17,6 +17,7 @@
                 "built_in_tools": {
                     "end_call": null,
                     "flag_issue_for_review": null,
+                    "identity_challenge": null,
                     "language_detection": null,
                     "memory_entry_search": null,
                     "play_keypad_touch_tone": null,
@@ -79,7 +80,6 @@
                 "agents": [],
                 "self_subagent": null
             },
-            "subagents": [],
             "text_behavior_overrides": {
                 "whatsapp": {
                     "disable_max_duration": true,
@@ -134,6 +134,7 @@
         "tts": {
             "agent_output_audio_format": "pcm_16000",
             "audio_effects": null,
+            "clone_strength": 0.0,
             "enable_phoneme_tags": true,
             "expressive_mode": true,
             "model_id": "eleven_v4_turbo",
@@ -144,7 +145,6 @@
                     "version_id": null
                 }
             ],
-            "pvc_strength": 0.0,
             "similarity_boost": 0.75,
             "speed": 0.9,
             "stability": 0.5,
@@ -159,6 +159,8 @@
             "interruption_ignore_terms": [],
             "merge_with_default_ignore_terms": false,
             "mode": "turn",
+            "noisy_environment_detection": false,
+            "noisy_environment_message": "Uhh ... sorry, I'm picking up some noise in the background. Could you move somewhere quieter?",
             "retranscribe_on_turn_timeout": false,
             "silence_end_call_timeout": -1.0,
             "soft_timeout_config": {
@@ -292,9 +294,9 @@
                     "text_only": true
                 },
                 "tts": {
+                    "clone_strength": false,
                     "model_id": false,
                     "pronunciation_dictionary_locators": false,
-                    "pvc_strength": false,
                     "similarity_boost": false,
                     "speed": false,
                     "stability": false,
@@ -302,6 +304,7 @@
                     "voice_id": false
                 },
                 "turn": {
+                    "noisy_environment_message": false,
                     "soft_timeout_config": {
                         "additional_soft_timeout_messages": false,
                         "message": false
